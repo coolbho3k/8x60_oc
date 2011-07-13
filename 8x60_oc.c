@@ -298,7 +298,7 @@ static int __init overclock_init(void)
 
 	/* Scan memory for clkctl_acpu_speed. Slightly less hacky. */
 	printk(KERN_INFO "8x60_oc: *** SCANNING FOR TABLE ***\n");
-	scan = 0xc071b000;
+	scan = 0xc0000000;
 	while(scan < 0xc1000000)
 	{
 		scan++;
